@@ -4,6 +4,7 @@ services:
 before_install:
   - pwd
   - ls /home/travis/
+  - top
   - docker pull ubuntu:14.04
   - docker info
   - docker images
