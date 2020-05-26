@@ -2,6 +2,8 @@ services:
   - docker
   
 before_install:
+  - pwd
+  - ls /var/lib/docker
   - docker pull ubuntu:14.04
   - docker info
   - docker images
